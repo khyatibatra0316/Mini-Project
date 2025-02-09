@@ -19,8 +19,14 @@ function SendOTP(){
             let otp_btn=document.getElementById("btn-verify-otp");
             otp_btn.addEventListener("click",()=>{
                 if(otp_inp.value==otp_code){
-                    alert
+                    alert("Email address verified...")
+                    otpverify.style.display="none";
+                    email.value="";
+                    oyp_inp.value="";
+                }else{
+                    alert("Invalid OTP.")
                 }
+
             })
         }
       }
